@@ -13,4 +13,5 @@
 12. Ánh xạ ELB Endpoint đến tên Website qua phần cấu hình DNS trên Godaddy.
 13. Xác thực ứng dụng đã hoạt động.
 14. Cài đặt Auto Scaling Group cho ứng dụng.
+
 -Tam Nguyen-
