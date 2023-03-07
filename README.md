@@ -3,7 +3,7 @@
 2. Đăng nhập vào AWS Account đã tạo.
 3. Đăng ký AWS Certificate Manager (ACM) và trỏ đến tên miền tamnguyen.cloud.
 4. Tạo Key Pairs.
-myKey.pem
+###myKey.pem
 chmod 400 myKey.pem
 5. Tạo Security Groups.
 - 
