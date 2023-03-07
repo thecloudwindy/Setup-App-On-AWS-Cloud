@@ -3,10 +3,13 @@
 2. Đăng nhập vào AWS Account đã tạo.
 3. Đăng ký AWS Certificate Manager (ACM) và trỏ đến tên miền tamnguyen.cloud.
 4. Tạo Key Pairs.
-###myKey.pem
-chmod 400 myKey.pem
+- `myKey.pem`
+- `chmod 400 myKey.pem`
 5. Tạo Security Groups.
-- 
+- ELB-sg allow HTTP/s:80 & 443 for IPv4 & IPv6
+- APP-sg allow traffic from ELB-sg on port 8080
+- BACKEND-sg includes: 
+`- MySQL`
 6. Khởi tạo các Instances dành cho TomCat Server, RDS MySQL Server, Elastic Cache Server, Amazon MQ Server.
 7. Tạo Private Domain trong Route53 và gán các Private IP các Servers: RDS MySQL Server, Elastic Cache Server, Amazon MQ Server để chúng giao tiếp với nhau.
 8. Triển khai App dựa trên Source Code.
